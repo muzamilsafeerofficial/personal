@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Muzamil Safeer | SEO Expert Portfolio & Consultant</title>
+    <meta name="description" content="Muzamil Safeer is Dubai's leading enterprise SEO expert and growth architect. Generate more organic traffic, dominate local search, and scale your MENA brand.">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "surface": "var(--color-surface)",
+                "surface-tint": "var(--color-surface-tint)",
+                "surface-dim": "var(--color-surface-dim)",
+                "on-error": "var(--color-on-error)",
+                "error-container": "var(--color-error-container)",
+                "secondary-fixed": "var(--color-secondary-fixed)",
+                "surface-variant": "var(--color-surface-variant)",
+                "on-surface": "var(--color-on-surface)",
+                "on-background": "var(--color-on-background)",
+                "secondary": "var(--color-secondary)",
+                "inverse-surface": "var(--color-inverse-surface)",
+                "surface-container-highest": "var(--color-surface-container-highest)",
+                "on-primary-container": "var(--color-on-primary-container)",
+                "on-secondary": "var(--color-on-secondary)",
+                "tertiary-fixed-dim": "var(--color-tertiary-fixed-dim)",
+                "tertiary-fixed": "var(--color-tertiary-fixed)",
+                "inverse-on-surface": "var(--color-inverse-on-surface)",
+                "secondary-container": "var(--color-secondary-container)",
+                "tertiary": "var(--color-tertiary)",
+                "on-tertiary-fixed-variant": "var(--color-on-tertiary-fixed-variant)",
+                "on-primary-fixed": "var(--color-on-primary-fixed)",
+                "on-tertiary": "var(--color-on-tertiary)",
+                "tertiary-container": "var(--color-tertiary-container)",
+                "error": "var(--color-error)",
+                "on-tertiary-container": "var(--color-on-tertiary-container)",
+                "on-surface-variant": "var(--color-on-surface-variant)",
+                "background": "var(--color-background)",
+                "primary-container": "var(--color-primary-container)",
+                "surface-container": "var(--color-surface-container)",
+                "surface-container-lowest": "var(--color-surface-container-lowest)",
+                "primary-fixed": "var(--color-primary-fixed)",
+                "secondary-fixed-dim": "var(--color-secondary-fixed-dim)",
+                "primary": "var(--color-primary)",
+                "on-error-container": "var(--color-on-error-container)",
+                "outline-variant": "var(--color-outline-variant)",
+                "on-primary": "var(--color-on-primary)",
+                "surface-container-high": "var(--color-surface-container-high)",
+                "on-tertiary-fixed": "var(--color-on-tertiary-fixed)",
+                "surface-container-low": "var(--color-surface-container-low)",
+                "primary-fixed-dim": "var(--color-primary-fixed-dim)",
+                "on-secondary-fixed-variant": "var(--color-on-secondary-fixed-variant)",
+                "on-secondary-fixed": "var(--color-on-secondary-fixed)",
+                "on-primary-fixed-variant": "var(--color-on-primary-fixed-variant)",
+                "inverse-primary": "var(--color-inverse-primary)",
+                "surface-bright": "var(--color-surface-bright)",
+                "on-secondary-container": "var(--color-on-secondary-container)",
+                "outline": "var(--color-outline)"
+              },
+              fontFamily: {
+                "headline": ["Plus Jakarta Sans"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
+
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass-header shadow-sm transition-colors duration-300">
+    <div class="flex justify-between items-center max-w-7xl mx-auto px-6 md:px-8 h-20">
+        <!-- Logo -->
+        <a href="#" class="flex items-center hover:opacity-85 transition-opacity" aria-label="Muzamil Safeer Home">
+            <img class="site-logo" src="assets/header-logo.png" alt="Muzamil Safeer">
+        </a>
+        
+        <!-- Desktop Nav Items -->
+        <div class="hidden md:flex items-center space-x-8 lg:space-x-12">
+            <a class="nav-link text-orange-600 dark:text-orange-500 font-extrabold border-b-2 border-orange-600 font-headline tracking-tight py-1 transition-all" href="#">Home</a>
+            <a class="nav-link text-slate-600 dark:text-slate-400 hover:text-orange-500 transition-colors font-headline font-bold tracking-tight py-1" href="#services">Services</a>
+            <a class="nav-link text-slate-600 dark:text-slate-400 hover:text-orange-500 transition-colors font-headline font-bold tracking-tight py-1" href="#results">Results</a>
+            <a class="nav-link text-slate-600 dark:text-slate-400 hover:text-orange-500 transition-colors font-headline font-bold tracking-tight py-1" href="#process">Process</a>
+            <a class="nav-link text-slate-600 dark:text-slate-400 hover:text-orange-500 transition-colors font-headline font-bold tracking-tight py-1" href="#about">About</a>
+        </div>
+        
+        <!-- Actions & Theme Toggle -->
+        <div class="flex items-center space-x-3 md:space-x-4">
+            <!-- Theme Toggle Button -->
+            <button id="theme-toggle" class="p-2.5 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-surface-container transition-colors" aria-label="Toggle theme">
+                <span id="theme-toggle-icon" class="material-symbols-outlined text-[22px]">dark_mode</span>
+            </button>
+
+            <!-- Call to Action -->
+            <a href="#audit" class="hidden sm:inline-block bg-primary-container text-on-primary px-5 py-2.5 rounded-lg font-bold hover:scale-[1.03] transition-transform duration-200 active:scale-95 shadow-md shadow-primary-container/20 text-sm">
+                Get Free Audit
+            </a>
+
+            <!-- Mobile Hamburger Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2.5 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-surface-container transition-colors" aria-label="Open menu">
+                <span id="mobile-menu-icon" class="material-symbols-outlined text-[24px]">menu</span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Navigation Drawer -->
+<div id="mobile-nav-drawer" class="fixed inset-y-0 right-0 z-45 w-72 bg-white dark:bg-slate-900 border-l border-outline-variant/10 shadow-2xl p-6 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col md:hidden pt-24">
+    <div class="flex flex-col space-y-6">
+        <a class="mobile-nav-link text-lg font-headline font-bold text-slate-900 dark:text-white hover:text-orange-500 transition-colors" href="#">Home</a>
+        <a class="mobile-nav-link text-lg font-headline font-bold text-slate-600 dark:text-slate-400 hover:text-orange-500 transition-colors" href="#services">Services</a>
+        <a class="mobile-nav-link text-lg font-headline font-bold text-slate-600 dark:text-slate-400 hover:text-orange-500 transition-colors" href="#results">Results</a>
+        <a class="mobile-nav-link text-lg font-headline font-bold text-slate-600 dark:text-slate-400 hover:text-orange-500 transition-colors" href="#process">Process</a>
+        <a class="mobile-nav-link text-lg font-headline font-bold text-slate-600 dark:text-slate-400 hover:text-orange-500 transition-colors" href="#about">About</a>
+        <div class="h-px bg-outline-variant/20 my-4"></div>
+        <a href="#audit" class="mobile-nav-link bg-primary-container text-on-primary text-center py-3 rounded-lg font-bold shadow-lg shadow-primary-container/20 hover:opacity-90">
+            Get Free Audit
+        </a>
+    </div>
+</div>
+
+<!-- Main Body -->
+<main class="pt-20 flex-grow">
+    
+    <!-- Hero Section -->
+    <section id="hero" class="relative flex items-center overflow-hidden py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-6 md:px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-7 lg:pr-12 text-left">
+                <span class="inline-block py-1.5 px-4 mb-6 rounded-full bg-primary-fixed text-on-primary-fixed text-xs font-extrabold tracking-widest uppercase shadow-sm">
+                    Google SEO + AI Search Visibility
+                </span>
+                <h1 class="font-headline text-4xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight mb-8 leading-[1.1]">
+                    Best SEO Expert in <span class="text-primary-container">Dubai, UAE</span>
+                </h1>
+                <p class="text-base md:text-lg text-slate-300 max-w-2xl mb-10 leading-relaxed">
+                    Helping businesses in Dubai to rank on Google Search, Google Maps, ChatGPT, Gemini, and other AI-powered search platforms in just 99 Days.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#audit" class="signature-glow text-on-primary px-8 py-4 rounded-lg font-bold text-lg hover:scale-[1.02] active:scale-95 transition-all flex items-center gap-2 shadow-lg shadow-primary-container/30">
+                        Request Free Audit
+                        <span class="material-symbols-outlined">trending_up</span>
+                    </a>
+                    <button class="open-case-study bg-white/10 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition-all border border-white/25 hover:scale-[1.02] active:scale-95">
+                        View Case Studies
+                    </button>
+                </div>
+            </div>
+
+            <!-- Hero Graphics (Spacer & Widgets) -->
+            <div class="lg:col-span-5 relative mt-8 lg:mt-0 hidden lg:block">
+                <div class="relative w-full h-[550px]">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Client Logos Slider -->
+    <section id="clients" class="client-logo-section bg-white dark:bg-slate-900 border-y border-outline-variant/10 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 md:px-8 py-10">
+            <div class="flex flex-col md:flex-row md:items-center gap-8">
+                <div class="md:w-64 shrink-0">
+                    <span class="text-primary font-extrabold tracking-[0.2em] text-xs uppercase mb-2 block">Trusted Partners</span>
+                    <h2 class="font-headline text-2xl md:text-3xl font-extrabold text-on-surface">Clients I Help Grow</h2>
+                </div>
+
+                <div class="client-logo-marquee flex-1" aria-label="Client logos">
+                    <div class="client-logo-track">
+                        <div class="client-logo-card" data-client="Octopus">
+                            <img src="assets/clients/octopus.svg" alt="Octopus" loading="lazy">
+                        </div>
+                        <div class="client-logo-card logo-force-black" data-client="Kevin">
+                            <img src="assets/clients/kevin.png" alt="Kevin" loading="lazy">
+                        </div>
+                        <div class="client-logo-card client-logo-wide" data-client="Nephos Group">
+                            <img src="assets/clients/nephos-group.png" alt="Nephos Group" loading="lazy">
+                        </div>
+                        <div class="client-logo-card client-logo-wide" data-client="Dr. Tarek Aesthetics">
+                            <img src="assets/clients/dr-tarek-aesthetics.png" alt="Dr. Tarek Aesthetics" loading="lazy">
+                        </div>
+                        <div class="client-logo-card" data-client="Sassy Italian Restaurant">
+                            <img src="assets/clients/sassy-italian-restaurant.png" alt="Sassy Italian Restaurant" loading="lazy">
+                        </div>
+                        <div class="client-logo-card" data-client="Duraamen">
+                            <img src="assets/clients/duraamen.png" alt="Duraamen" loading="lazy">
+                        </div>
+                        <div class="client-logo-card" data-client="WON Communications">
+                            <img src="assets/clients/won-communications.svg" alt="WON Communications" loading="lazy">
+                        </div>
+                        <div class="client-logo-card" data-client="Skintes">
+                            <img src="assets/clients/skintes.png" alt="Skintes" loading="lazy">
+                        </div>
+                        <div class="client-logo-card client-logo-wide" data-client="HTS Interiors">
+                            <img src="assets/clients/hts-interiors.jpg" alt="HTS Interiors" loading="lazy">
+                        </div>
+                        <div class="client-logo-card" data-client="Octopus" aria-hidden="true">
+                            <img src="assets/clients/octopus.svg" alt="" loading="lazy">
+                        </div>
+                        <div class="client-logo-card logo-force-black" data-client="Kevin" aria-hidden="true">
+                            <img src="assets/clients/kevin.png" alt="" loading="lazy">
+                        </div>
+                        <div class="client-logo-card client-logo-wide" data-client="Nephos Group" aria-hidden="true">
+                            <img src="assets/clients/nephos-group.png" alt="" loading="lazy">
+                        </div>
+                        <div class="client-logo-card client-logo-wide" data-client="Dr. Tarek Aesthetics" aria-hidden="true">
+                            <img src="assets/clients/dr-tarek-aesthetics.png" alt="" loading="lazy">
+                        </div>
+                        <div class="client-logo-card" data-client="Sassy Italian Restaurant" aria-hidden="true">
+                            <img src="assets/clients/sassy-italian-restaurant.png" alt="" loading="lazy">
+                        </div>
+                        <div class="client-logo-card" data-client="Duraamen" aria-hidden="true">
+                            <img src="assets/clients/duraamen.png" alt="" loading="lazy">
+                        </div>
+                        <div class="client-logo-card" data-client="WON Communications" aria-hidden="true">
+                            <img src="assets/clients/won-communications.svg" alt="" loading="lazy">
+                        </div>
+                        <div class="client-logo-card" data-client="Skintes" aria-hidden="true">
+                            <img src="assets/clients/skintes.png" alt="" loading="lazy">
+                        </div>
+                        <div class="client-logo-card client-logo-wide" data-client="HTS Interiors" aria-hidden="true">
+                            <img src="assets/clients/hts-interiors.jpg" alt="" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Testimonials Section -->
+    <section id="results" class="py-8 md:py-10 overflow-hidden bg-white dark:bg-slate-900 border-y border-outline-variant/10 scroll-reveal transition-colors duration-300">
+        <div class="results-compact max-w-7xl mx-auto px-6 md:px-8">
+            <div class="results-copy text-center md:text-left max-w-3xl mx-auto md:mx-0 mb-6 md:mb-0">
+                <span class="text-primary font-extrabold tracking-[0.2em] text-xs uppercase mb-3 block">Client Stories</span>
+                <h2 class="font-headline text-3xl md:text-4xl font-extrabold mb-3 text-on-surface">Growth in Action</h2>
+                <p class="text-on-surface-variant text-base leading-relaxed">Watch how we transformed organic search into a primary revenue driver for Dubai's leading enterprises.</p>
+            </div>
+            
+            <div class="reel-showcase" data-active-index="1" aria-label="SEO reel carousel">
+                <div class="reel-card group" role="button" tabindex="0" data-reel-index="0" data-video-src="https://www.youtube.com/embed/d1K2MIsCjYQ" aria-label="Play technical SEO reel">
+                    <div class="reel-media">
+                        <span class="reel-bg" style="background-image: url('https://lh3.googleusercontent.com/aida/ADBb0ugpD7-H8yMUO-O72gkxARVnY70BUenLMxFx2spjHSufFi_LpsZruF8rwkCyR0b1puvy7dax-sSQFqAsJj-0E4NzwnlZhkHuWFJji6Nr8Hxkmwq7xN8f2gO_cqfmuQFoQo3M_VJ7u82F01rP8Qk1Vj7nE7glMVL-EXuKeXWwH1XUXRqVg2NUonJKb-4t_-dM2DpZ_t9LfetJ9uWWGBfPc_DGwkdNOFtapgb9QbguQZ36qaMVNae7i2a03FHXHHaHw4aJKcsyMWUY');"></span>
+                    </div>
+                    <span class="reel-play-button">
+                        <span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                    </span>
+                </div>
+
+                <div class="reel-card is-active group" role="button" tabindex="0" data-reel-index="1" data-video-src="https://www.youtube.com/embed/d1K2MIsCjYQ" aria-label="Play featured client story reel">
+                    <div class="reel-media">
+                        <span class="reel-bg" style="background-image: url('https://lh3.googleusercontent.com/aida/ADBb0ugpD7-H8yMUO-O72gkxARVnY70BUenLMxFx2spjHSufFi_LpsZruF8rwkCyR0b1puvy7dax-sSQFqAsJj-0E4NzwnlZhkHuWFJji6Nr8Hxkmwq7xN8f2gO_cqfmuQFoQo3M_VJ7u82F01rP8Qk1Vj7nE7glMVL-EXuKeXWwH1XUXRqVg2NUonJKb-4t_-dM2DpZ_t9LfetJ9uWWGBfPc_DGwkdNOFtapgb9QbguQZ36qaMVNae7i2a03FHXHHaHw4aJKcsyMWUY');"></span>
+                    </div>
+                    <span class="reel-play-button">
+                        <span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                    </span>
+                </div>
+
+                <div class="reel-card group" role="button" tabindex="0" data-reel-index="2" data-video-src="https://www.youtube.com/embed/d1K2MIsCjYQ" aria-label="Play local SEO reel">
+                    <div class="reel-media">
+                        <span class="reel-bg" style="background-image: url('https://lh3.googleusercontent.com/aida/ADBb0ugpD7-H8yMUO-O72gkxARVnY70BUenLMxFx2spjHSufFi_LpsZruF8rwkCyR0b1puvy7dax-sSQFqAsJj-0E4NzwnlZhkHuWFJji6Nr8Hxkmwq7xN8f2gO_cqfmuQFoQo3M_VJ7u82F01rP8Qk1Vj7nE7glMVL-EXuKeXWwH1XUXRqVg2NUonJKb-4t_-dM2DpZ_t9LfetJ9uWWGBfPc_DGwkdNOFtapgb9QbguQZ36qaMVNae7i2a03FHXHHaHw4aJKcsyMWUY');"></span>
+                    </div>
+                    <span class="reel-play-button">
+                        <span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="pt-14 pb-20 md:pt-16 md:pb-24 bg-white dark:bg-slate-900 scroll-reveal border-y border-outline-variant/10 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-6 md:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                
+                <div class="lg:col-span-5">
+                    <div class="relative group">
+                        <div class="absolute -inset-4 bg-primary-container/10 rounded-[2rem] -rotate-3 group-hover:rotate-0 transition-transform duration-500"></div>
+                        <div class="relative rounded-[1.5rem] overflow-hidden shadow-2xl border-4 border-surface-container-high dark:border-slate-800 aspect-square">
+                            <img alt="Muzamil Safeer Professional Portrait" class="w-full h-full object-cover object-top" src="assets/personal-pic.png">
+                        </div>
+                        
+                        <div class="absolute -bottom-6 -right-6 bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-xl border border-outline-variant/20 hidden md:block">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-primary-container">workspace_premium</span>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-bold text-on-surface uppercase tracking-widest">Certified Expert</p>
+                                    <p class="text-xs text-on-surface-variant">MENA SEO Authority</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-7">
+                    <span class="text-primary-container font-extrabold tracking-[0.2em] text-xs uppercase mb-4 block">Meet Muzamil Safeer</span>
+                    <h2 class="font-headline text-4xl md:text-5xl font-extrabold mb-8 text-on-surface leading-tight">
+                        Top <span class="text-primary-container">SEO & AI</span> Search Consultant in Dubai
+                    </h2>
+                    
+                    <div class="space-y-6 text-on-surface-variant text-lg leading-relaxed mb-10">
+                        <p>
+                            I’m Muzamil Safeer, an SEO and AI Search Consultant focused on helping businesses increase their presence across Google and AI-powered search platforms. For the past 5+ years, I’ve been helping businesses to rank and generate more qualified leads through SEO.
+                        </p>
+                        <p>
+Search has changed. Customers now use AI tools alongside Google to find businesses, compare services, and choose providers. If your business isn't visible and trusted online, potential customers may find your competitors first.
+                        </p>
+                        <p>
+                            My focus is simple: find the visibility gaps, fix what is blocking your rankings, and build a search presence that helps turn high-intent searches into qualified leads.
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
+                        <div class="p-6 rounded-xl bg-surface border border-outline-variant/10 text-center shadow-sm">
+                            <p class="text-3xl font-black text-primary-container mb-1">5+</p>
+                            <p class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Years Experience</p>
+                        </div>
+                        <div class="p-6 rounded-xl bg-surface border border-outline-variant/10 text-center shadow-sm">
+                            <p class="text-3xl font-black text-primary-container mb-1">$5M+</p>
+                            <p class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Revenue Generated</p>
+                        </div>
+                        <div class="p-6 rounded-xl bg-surface border border-outline-variant/10 text-center shadow-sm">
+                            <p class="text-3xl font-black text-primary-container mb-1">PROVEN</p>
+                            <p class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">UAE Frameworks</p>
+                        </div>
+                    </div>
+                    
+                    <button class="open-case-study signature-glow text-on-primary px-10 py-4 rounded-lg font-bold text-lg hover:shadow-xl hover:shadow-primary-container/20 transition-all flex items-center gap-3 group">
+                        Let's Build Your Authority
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- The SEO Growth Engine (3-Step Process) -->
+    <section id="process" class="py-24 bg-surface scroll-reveal">
+        <div class="max-w-7xl mx-auto px-6 md:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-primary-container font-extrabold tracking-[0.2em] text-xs uppercase mb-4 block">Proven Execution</span>
+                <h2 class="font-headline text-4xl md:text-5xl font-extrabold mb-6">The SEO Growth Engine</h2>
+                <p class="text-on-surface-variant text-lg">A systematic 3-step framework designed for predictability and scale in competitive markets.</p>
+            </div>
+
+            <div class="seo-network-lab mb-20">
+                <div class="seo-network-viewport" aria-hidden="true">
+                    <canvas id="seo-network-canvas"></canvas>
+                    <div class="seo-network-fallback">
+                        <span class="material-symbols-outlined">hub</span>
+                    </div>
+                </div>
+                <div class="seo-network-copy">
+                    <span class="text-primary-container font-extrabold tracking-[0.2em] text-xs uppercase mb-3 block">Search Ecosystem</span>
+                    <h3 class="font-headline text-3xl md:text-4xl font-extrabold text-on-surface mb-5">A living map of rankings, links, and revenue signals.</h3>
+                    <p class="text-on-surface-variant leading-relaxed mb-6">The growth engine connects technical health, topical authority, local intent, and conversion data into one compounding visibility system.</p>
+                    <div class="seo-signal-grid">
+                        <span>Technical Health</span>
+                        <span>Content Clusters</span>
+                        <span>Authority Links</span>
+                        <span>Local Intent</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+                <!-- Connective Line (Desktop Only) -->
+                <div class="hidden md:block absolute top-24 left-0 w-full h-0.5 bg-outline-variant/30 z-0"></div>
+                
+                <!-- Step 1 -->
+                <div class="relative z-10 text-center premium-card rounded-3xl p-8 md:p-10">
+                    <div class="w-20 h-20 bg-white dark:bg-slate-900 rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-xl border border-outline-variant/10 group-hover:border-primary-container transition-all">
+                        <span class="text-5xl font-black step-number">01</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-headline text-on-surface">Deep Audit</h3>
+                    <p class="text-on-surface-variant text-sm md:text-base leading-relaxed">We identify technical bottlenecks, content gaps, and the 'low hanging fruit' keywords your competitors missed.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="relative z-10 text-center premium-card rounded-3xl p-8 md:p-10">
+                    <div class="w-20 h-20 bg-white dark:bg-slate-900 rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-xl border border-outline-variant/10 group-hover:border-primary-container transition-all">
+                        <span class="text-5xl font-black step-number">02</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-headline text-on-surface">Strategic Roadmap</h3>
+                    <p class="text-on-surface-variant text-sm md:text-base leading-relaxed">Building a 6-month topical authority map that aligns with your highest-margin business products and services.</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="relative z-10 text-center premium-card rounded-3xl p-8 md:p-10">
+                    <div class="w-20 h-20 signature-glow rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-xl shadow-orange-500/20">
+                        <span class="text-5xl font-black text-white">03</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 font-headline text-on-surface">Aggressive Execution</h3>
+                    <p class="text-on-surface-variant text-sm md:text-base leading-relaxed">Continuous technical monitoring, high-quality content production, and precision-targeted link building.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Dominance (Dubai Focus) -->
+    <section class="py-24 bg-surface scroll-reveal transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-6 md:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                
+                <div class="order-2 lg:order-1">
+                    <div class="bg-surface-container-low rounded-3xl p-8 border border-outline-variant/20 shadow-lg">
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-white">
+                                <span class="material-symbols-outlined">location_on</span>
+                            </div>
+                            <h3 class="text-2xl font-bold font-headline text-on-surface">Dubai Local Dominance</h3>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <div class="p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm border-l-4 border-primary-container">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-xs font-bold text-on-surface-variant uppercase">Keyword Focus</span>
+                                    <span class="text-xs font-bold text-green-600 bg-green-50 dark:bg-green-950 dark:text-green-300 px-2 py-0.5 rounded">Rank #1</span>
+                                </div>
+                                <p class="text-lg font-bold text-on-surface">"Best SEO Agency in Dubai"</p>
+                            </div>
+                            
+                            <div class="p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm border-l-4 border-primary-container">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-xs font-bold text-on-surface-variant uppercase">Keyword Focus</span>
+                                    <span class="text-xs font-bold text-green-600 bg-green-50 dark:bg-green-950 dark:text-green-300 px-2 py-0.5 rounded">Rank #1</span>
+                                </div>
+                                <p class="text-lg font-bold text-on-surface">"Real Estate Agents Near Me"</p>
+                            </div>
+                            
+                            <div class="p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm border-l-4 border-primary-container">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-xs font-bold text-on-surface-variant uppercase">Keyword Focus</span>
+                                    <span class="text-xs font-bold text-green-600 bg-green-50 dark:bg-green-950 dark:text-green-300 px-2 py-0.5 rounded">Rank #2</span>
+                                </div>
+                                <p class="text-lg font-bold text-on-surface">"Rent a Car Dubai Marina"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-1 lg:order-2">
+                    <span class="text-primary-container font-extrabold tracking-[0.2em] text-xs uppercase mb-4 block">Hyper-Local SEO</span>
+                    <h2 class="font-headline text-4xl md:text-5xl font-extrabold mb-8 text-on-surface">Win the "Near Me" Battle in Dubai</h2>
+                    <p class="text-on-surface-variant text-lg mb-8 leading-relaxed">In a city as dynamic as Dubai, proximity is profit. We optimize your Google Business Profile (GBP) and local landing assets to ensure you rank whenever customers search in your vicinity.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary-container">check_circle</span>
+                            <span class="font-bold text-on-surface">Multi-neighborhood authority mapping (Marina, Downtown, JLT)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary-container">check_circle</span>
+                            <span class="font-bold text-on-surface">Map Pack dominance for highest-intent local queries</span>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI-Focused Analytics Dashboard -->
+    <section class="py-24 bg-surface scroll-reveal">
+        <div class="max-w-7xl mx-auto px-6 md:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-primary-container font-extrabold tracking-[0.2em] text-xs uppercase mb-4 block">Real-Time Impact</span>
+                <h2 class="font-headline text-4xl md:text-5xl font-extrabold mb-6 text-on-surface">ROI-Focused Reporting</h2>
+                <p class="text-on-surface-variant text-lg">We bridge the gap between "Search Volume" and "Sales Volume" with integrated analytics dashboards.</p>
+            </div>
+            
+            <div class="roi-dashboard-3d bg-slate-900 rounded-3xl p-8 lg:p-12 shadow-2xl relative overflow-hidden">
+                <!-- Dashboard Decoration -->
+                <div class="dashboard-depth-grid" aria-hidden="true"></div>
+                <div class="dashboard-depth-line dashboard-depth-line-a" aria-hidden="true"></div>
+                <div class="dashboard-depth-line dashboard-depth-line-b" aria-hidden="true"></div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 relative z-10">
+                    
+                    <div class="dashboard-card-3d bg-white/5 border border-white/10 rounded-2xl p-6">
+                        <p class="text-white/60 text-xs font-bold uppercase tracking-widest mb-4 font-headline">Traffic vs. Revenue</p>
+                        <div class="flex items-end gap-2 h-32 mb-4">
+                            <div class="w-full bg-white/10 rounded-t-sm h-[40%]"></div>
+                            <div class="w-full bg-white/10 rounded-t-sm h-[55%]"></div>
+                            <div class="w-full bg-white/10 rounded-t-sm h-[45%]"></div>
+                            <div class="w-full bg-primary-container rounded-t-sm h-[75%]"></div>
+                            <div class="w-full bg-primary-container rounded-t-sm h-[90%]"></div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-white font-bold text-lg">$248k</span>
+                            <span class="text-green-400 font-bold text-xs">+82% Growth</span>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-card-3d dashboard-card-3d-raised bg-white/5 border border-white/10 rounded-2xl p-6">
+                        <p class="text-white/60 text-xs font-bold uppercase tracking-widest mb-4 font-headline">Keyword Visibility</p>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between items-center mb-1">
+                                    <span class="text-white/80 text-sm">Top 3 Positions</span>
+                                    <span class="text-white font-bold text-sm">1,240</span>
+                                </div>
+                                <div class="w-full bg-white/10 h-2 rounded-full overflow-hidden">
+                                    <div class="bg-primary-container h-full w-[85%]"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-center mb-1">
+                                    <span class="text-white/80 text-sm">Top 10 Positions</span>
+                                    <span class="text-white font-bold text-sm">4,890</span>
+                                </div>
+                                <div class="w-full bg-white/10 h-2 rounded-full overflow-hidden">
+                                    <div class="bg-primary-container h-full w-[60%]"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-card-3d bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col justify-center text-center">
+                        <p class="text-white/60 text-xs font-bold uppercase tracking-widest mb-2 font-headline">Estimated ROI</p>
+                        <span class="text-white text-5xl font-black mb-2">12.4x</span>
+                        <p class="text-primary-container font-bold text-sm">Average Annual Return</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Authority Link Building -->
+    <section class="py-24 bg-white dark:bg-slate-900 border-y border-outline-variant/10 scroll-reveal transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-6 md:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                
+                <div>
+                    <span class="text-primary-container font-extrabold tracking-[0.2em] text-xs uppercase mb-4 block">Sustainable Growth</span>
+                    <h2 class="font-headline text-4xl md:text-5xl font-extrabold mb-8 text-on-surface">White-Hat Link Assets That Endure</h2>
+                    <p class="text-on-surface-variant text-lg mb-10 leading-relaxed">Forget spammy networks and low-quality comments. We build genuine brand authority through valuable relationships and high-quality digital PR that Google rewards long-term.</p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="flex gap-4">
+                            <span class="material-symbols-outlined text-primary-container text-2xl">verified</span>
+                            <div>
+                                <h4 class="font-bold text-on-surface">No Penalty Risk</h4>
+                                <p class="text-sm text-on-surface-variant mt-1">Surgical strategies aligned exactly with Google's E-E-A-T quality guidelines.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <span class="material-symbols-outlined text-primary-container text-2xl">newspaper</span>
+                            <div>
+                                <h4 class="font-bold text-on-surface">Digital PR Outreach</h4>
+                                <p class="text-sm text-on-surface-variant mt-1">Real guest slots on high-authority news portals and publications.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="aspect-square bg-surface-container rounded-3xl p-8 md:p-12 flex flex-col justify-center items-center shadow-inner">
+                        <div class="w-full max-w-xs space-y-6">
+                            <!-- Floating Link Badge 1 -->
+                            <div class="bg-white dark:bg-slate-800 p-4 rounded-xl shadow-lg border border-outline-variant/10 flex items-center gap-4 transition-colors">
+                                <span class="w-10 h-10 rounded-full bg-blue-50 dark:bg-blue-950 flex items-center justify-center text-blue-600">
+                                    <span class="material-symbols-outlined">newspaper</span>
+                                </span>
+                                <div>
+                                    <p class="text-xs font-bold text-on-surface">Khaleej Times</p>
+                                    <p class="text-[10px] text-on-surface-variant">Domain Rating: 88</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Floating Link Badge 2 -->
+                            <div class="bg-white dark:bg-slate-800 p-4 rounded-xl shadow-lg border border-outline-variant/10 flex items-center gap-4 transition-colors">
+                                <span class="w-10 h-10 rounded-full bg-orange-50 dark:bg-orange-950 flex items-center justify-center text-orange-600">
+                                    <span class="material-symbols-outlined">newspaper</span>
+                                </span>
+                                <div>
+                                    <p class="text-xs font-bold text-on-surface">Gulf News</p>
+                                    <p class="text-[10px] text-on-surface-variant">Domain Rating: 90</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-12 text-center">
+                            <p class="text-4xl font-black text-on-surface">500+</p>
+                            <p class="text-sm font-bold text-on-surface-variant uppercase tracking-widest mt-1">Premium Placements</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO vs. PPC Comparison -->
+    <section class="py-24 bg-surface scroll-reveal">
+        <div class="max-w-7xl mx-auto px-6 md:px-8 text-center mb-16">
+            <h2 class="font-headline text-4xl font-extrabold text-on-surface">Why SEO? The Wealth Comparison</h2>
+        </div>
+        
+        <div class="max-w-5xl mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- PPC Card -->
+            <div class="bg-white dark:bg-slate-800 p-8 md:p-10 rounded-3xl border border-outline-variant/20 shadow-md transition-colors duration-300">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 rounded-full bg-slate-100 dark:bg-slate-700 flex items-center justify-center text-slate-400">
+                        <span class="material-symbols-outlined">payments</span>
+                    </div>
+                    <h3 class="text-2xl font-bold font-headline text-on-surface">Paid Search (PPC)</h3>
+                </div>
+                <p class="text-on-surface-variant mb-8 text-sm md:text-base leading-relaxed">A "rented" traffic model. You stop paying, your leads stop immediately. Costs increase as search engine ads bid competition rises.</p>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center gap-2 text-red-500 text-sm font-bold">
+                        <span class="material-symbols-outlined text-sm">cancel</span> High Monthly Ad Spend
+                    </li>
+                    <li class="flex items-center gap-2 text-red-500 text-sm font-bold">
+                        <span class="material-symbols-outlined text-sm">cancel</span> Zero Residual Asset Value
+                    </li>
+                </ul>
+                <div class="h-2 w-full bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden">
+                    <div class="h-full bg-slate-300 dark:bg-slate-500 w-1/3"></div>
+                </div>
+                <p class="text-[10px] uppercase font-bold text-slate-400 mt-2">Efficiency: 30%</p>
+            </div>
+            
+            <!-- SEO Card -->
+            <div class="bg-white dark:bg-slate-800 p-8 md:p-10 rounded-3xl border-2 border-primary-container shadow-2xl relative overflow-hidden transition-colors duration-300">
+                <div class="absolute top-0 right-0 bg-primary-container text-white px-4 py-1.5 text-[10px] font-bold rounded-bl-xl tracking-wider">BEST LONG-TERM VALUE</div>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-white">
+                        <span class="material-symbols-outlined">trending_up</span>
+                    </div>
+                    <h3 class="text-2xl font-bold font-headline text-on-surface">Organic SEO</h3>
+                </div>
+                <p class="text-on-surface-variant mb-8 text-sm md:text-base leading-relaxed">An "owned" asset model. Your authority compounds over time, lowering your customer acquisition cost (CPA) every single month.</p>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center gap-2 text-green-600 text-sm font-bold">
+                        <span class="material-symbols-outlined text-sm">check_circle</span> Compounding Organic Leads
+                    </li>
+                    <li class="flex items-center gap-2 text-green-600 text-sm font-bold">
+                        <span class="material-symbols-outlined text-sm">check_circle</span> Zero Incremental CPC Click Costs
+                    </li>
+                </ul>
+                <div class="h-2 w-full bg-primary-container/20 rounded-full overflow-hidden">
+                    <div class="h-full bg-primary-container w-[95%]"></div>
+                </div>
+                <p class="text-[10px] uppercase font-bold text-primary-container mt-2">Efficiency: 95%</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Case Study Showcase Snippet (Deep Dive) -->
+    <section class="py-24 bg-white dark:bg-slate-900 scroll-reveal transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-6 md:px-8">
+            <div class="bg-slate-950 text-white rounded-3xl overflow-hidden grid grid-cols-1 lg:grid-cols-12 shadow-2xl">
+                
+                <div class="lg:col-span-5 relative h-64 lg:h-auto">
+                    <img alt="Case Study Office Background" class="absolute inset-0 w-full h-full object-cover opacity-40" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80">
+                    <div class="absolute inset-0 bg-primary-container mix-blend-overlay"></div>
+                    <div class="absolute inset-0 flex flex-col justify-center p-8 md:p-12 z-10">
+                        <span class="text-white/80 font-bold uppercase tracking-widest text-xs mb-4">Case Study: Deep Dive</span>
+                        <h3 class="text-2xl md:text-3xl font-bold font-headline mb-6">Property Finder Dubai Competitor</h3>
+                        <div class="flex items-center gap-6">
+                            <div>
+                                <p class="text-2xl md:text-3xl font-black text-white">+420%</p>
+                                <p class="text-[10px] uppercase text-white/60 tracking-wider font-semibold">Organic Traffic</p>
+                            </div>
+                            <div class="h-10 w-px bg-white/20"></div>
+                            <div>
+                                <p class="text-2xl md:text-3xl font-black text-white">6 Months</p>
+                                <p class="text-[10px] uppercase text-white/60 tracking-wider font-semibold">Duration</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-7 p-8 md:p-12 lg:p-16 flex flex-col justify-center">
+                    <h4 class="text-xl font-bold mb-4 text-primary-container">The Challenge</h4>
+                    <p class="text-slate-300 mb-8 leading-relaxed">A mid-size real estate firm was spending $20,000/month on Google Ads with shrinking margins. Their organic visibility was non-existent for key high-intent neighborhood keywords.</p>
+                    <h4 class="text-xl font-bold mb-4 text-primary-container">The Solution</h4>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-white text-sm mt-1">arrow_forward</span>
+                            <span class="text-slate-300">Created 45 neighborhood-specific guide authorities with unique localized data.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-white text-sm mt-1">arrow_forward</span>
+                            <span class="text-slate-300">Resolved deep indexing errors, core Web Vitals delays, and internal link silos.</span>
+                        </li>
+                    </ul>
+                    <div>
+                        <button class="open-case-study bg-white text-slate-900 px-8 py-3.5 rounded-lg font-bold hover:bg-primary-container hover:text-white transition-all shadow-md active:scale-95">
+                            Read Full Breakdown
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategic SEO Services Section -->
+    <section id="services" class="py-24 bg-surface scroll-reveal border-t border-outline-variant/10 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-6 md:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-primary-container font-extrabold tracking-[0.2em] text-xs uppercase mb-4 block">Core Expertise</span>
+                <h2 class="font-headline text-4xl md:text-5xl font-extrabold mb-6 text-on-surface">Specialized Performance Hubs</h2>
+                <p class="text-on-surface-variant text-lg">Deep-level execution across the three pillars of modern SEO.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="p-8 md:p-10 rounded-2xl border border-outline-variant/20 hover:border-primary-container/40 transition-all hover:shadow-2xl hover:shadow-primary-container/5 bg-white dark:bg-slate-800 group">
+                    <div class="w-16 h-16 rounded-xl bg-primary-container/5 flex items-center justify-center mb-8 group-hover:bg-primary-container transition-colors">
+                        <span class="material-symbols-outlined text-primary-container text-4xl group-hover:text-white transition-colors">language</span>
+                    </div>
+                    <h3 class="font-headline text-2xl font-bold mb-4 text-on-surface">Enterprise Architecture</h3>
+                    <p class="text-on-surface-variant leading-relaxed mb-8 text-sm md:text-base">Optimization of structural internal linking configurations and crawl index budgets for domains with 10k+ pages to ensure instant indexing.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2 text-sm font-bold text-on-surface">
+                            <span class="material-symbols-outlined text-primary-container text-lg">check_circle</span> Hub &amp; Spoke Structuring
+                        </li>
+                        <li class="flex items-center gap-2 text-sm font-bold text-on-surface">
+                            <span class="material-symbols-outlined text-primary-container text-lg">check_circle</span> Core Web Vitals Optimization
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="p-8 md:p-10 rounded-2xl border border-outline-variant/20 hover:border-primary-container/40 transition-all hover:shadow-2xl hover:shadow-primary-container/5 bg-white dark:bg-slate-800 group">
+                    <div class="w-16 h-16 rounded-xl bg-primary-container/5 flex items-center justify-center mb-8 group-hover:bg-primary-container transition-colors">
+                        <span class="material-symbols-outlined text-primary-container text-4xl group-hover:text-white transition-colors">description</span>
+                    </div>
+                    <h3 class="font-headline text-2xl font-bold mb-4 text-on-surface">Semantic SEO Engine</h3>
+                    <p class="text-on-surface-variant leading-relaxed mb-8 text-sm md:text-base">Leveraging Google NLP algorithms and entity mapping matrices to dominate topical authority across your industry's most valuable clusters.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2 text-sm font-bold text-on-surface">
+                            <span class="material-symbols-outlined text-primary-container text-lg">check_circle</span> EEAT Content Authority Auditing
+                        </li>
+                        <li class="flex items-center gap-2 text-sm font-bold text-on-surface">
+                            <span class="material-symbols-outlined text-primary-container text-lg">check_circle</span> Semantic Intent Entity Mapping
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="p-8 md:p-10 rounded-2xl border border-outline-variant/20 hover:border-primary-container/40 transition-all hover:shadow-2xl hover:shadow-primary-container/5 bg-white dark:bg-slate-800 group">
+                    <div class="w-16 h-16 rounded-xl bg-primary-container/5 flex items-center justify-center mb-8 group-hover:bg-primary-container transition-colors">
+                        <span class="material-symbols-outlined text-primary-container text-4xl group-hover:text-white transition-colors">hub</span>
+                    </div>
+                    <h3 class="font-headline text-2xl font-bold mb-4 text-on-surface">High-Authority Links</h3>
+                    <p class="text-on-surface-variant leading-relaxed mb-8 text-sm md:text-base">White-hat outreach assets focused on obtaining link placements from high-DR websites within the UAE and global corporate domains.</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2 text-sm font-bold text-on-surface">
+                            <span class="material-symbols-outlined text-primary-container text-lg">check_circle</span> Digital PR Outreach Campaigns
+                        </li>
+                        <li class="flex items-center gap-2 text-sm font-bold text-on-surface">
+                            <span class="material-symbols-outlined text-primary-container text-lg">check_circle</span> Content Collaboration Links
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- High-Converting Audit Section -->
+    <section id="audit" class="py-24 bg-white dark:bg-slate-900 scroll-reveal transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-6 md:px-8">
+            <div class="bg-slate-900 text-white py-16 px-8 md:px-20 rounded-3xl relative overflow-hidden shadow-2xl">
+                <div class="absolute top-0 right-0 w-1/3 h-full bg-primary-container/10 -skew-x-12 translate-x-24"></div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+                    <div>
+                        <h2 class="font-headline text-4xl md:text-5xl font-extrabold mb-6 leading-tight">Stop Guessing. <br><span class="text-primary-container">Start Outranking.</span></h2>
+                        <p class="text-slate-300 text-lg mb-8 leading-relaxed">
+                            Get a comprehensive, manual SEO audit that identifies why you're losing traffic to competitors, paired with a customized 90-day execution roadmap.
+                        </p>
+                        
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary-container">check_circle</span>
+                                <span class="text-slate-200 text-sm md:text-base">Detailed Technical Core-Vitals Scorecard</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary-container">check_circle</span>
+                                <span class="text-slate-200 text-sm md:text-base">Top 5 Keyword Growth &amp; Profit Funnels</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary-container">check_circle</span>
+                                <span class="text-slate-200 text-sm md:text-base">Competitor Backlink Profile Gap Assessment</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-2xl text-slate-800 dark:text-white transition-colors duration-300">
+                        <form class="space-y-6">
+                            <div>
+                                <label class="block text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-widest mb-2">Website URL</label>
+                                <input required class="w-full bg-transparent border-b border-outline-variant/40 focus:border-primary-container focus:ring-0 px-0 py-3 text-on-surface outline-none transition-all placeholder:text-slate-400 dark:placeholder:text-slate-500" placeholder="yourdomain.com" type="url">
+                            </div>
+                            <div>
+                                <label class="block text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-widest mb-2">Business Email</label>
+                                <input required class="w-full bg-transparent border-b border-outline-variant/40 focus:border-primary-container focus:ring-0 px-0 py-3 text-on-surface outline-none transition-all placeholder:text-slate-400 dark:placeholder:text-slate-500" placeholder="name@company.com" type="email">
+                            </div>
+                            <button class="w-full signature-glow text-on-primary py-4 rounded-lg font-bold text-lg hover:shadow-xl active:scale-95 transition-all shadow-md shadow-primary-container/20" type="submit">
+                                Analyze My Site
+                            </button>
+                            <p class="text-center text-slate-500 dark:text-slate-400 text-xs mt-4">
+                                No fluff. Just hard data. 100% Free for Dubai-based brands.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 w-full py-12 border-t border-slate-200/50 dark:border-slate-800/50 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <div class="col-span-1 lg:col-span-1">
+            <div class="text-lg font-bold text-slate-900 dark:text-white mb-4">Muzamil Safeer</div>
+            <p class="text-slate-500 dark:text-slate-400 text-sm tracking-wide leading-relaxed">
+                The authority in organic performance and structural search optimization for growth brands in the MENA region.
+            </p>
+        </div>
+        
+        <div class="space-y-4">
+            <h4 class="text-slate-900 dark:text-white font-bold text-sm tracking-widest uppercase">Navigation</h4>
+            <ul class="space-y-2">
+                <li><a class="text-slate-500 dark:text-slate-400 hover:text-orange-500 text-sm transition-colors duration-200" href="#services">Case Studies</a></li>
+                <li><a class="text-slate-500 dark:text-slate-400 hover:text-orange-500 text-sm transition-colors duration-200" href="#services">Expertise</a></li>
+                <li><a class="text-slate-500 dark:text-slate-400 hover:text-orange-500 text-sm transition-colors duration-200" href="#audit">Free Audit</a></li>
+            </ul>
+        </div>
+        
+        <div class="space-y-4">
+            <h4 class="text-slate-900 dark:text-white font-bold text-sm tracking-widest uppercase">Connect</h4>
+            <ul class="space-y-2">
+                <li><a class="text-slate-500 dark:text-slate-400 hover:text-orange-500 text-sm transition-colors duration-200 flex items-center gap-1.5" href="https://www.linkedin.com/in/muzamil-seo-expert/" target="_blank" rel="noopener">LinkedIn <span class="material-symbols-outlined text-[14px]">open_in_new</span></a></li>
+                <li><a class="text-slate-500 dark:text-slate-400 hover:text-orange-500 text-sm transition-colors duration-200" href="#" target="_blank" rel="noopener">Twitter/X</a></li>
+            </ul>
+        </div>
+        
+        <div class="space-y-4">
+            <h4 class="text-slate-900 dark:text-white font-bold text-sm tracking-widest uppercase">Legal</h4>
+            <ul class="space-y-2">
+                <li><a class="text-slate-500 dark:text-slate-400 hover:text-orange-500 text-sm transition-colors duration-200" href="#">Privacy Policy</a></li>
+                <li><a class="text-slate-500 dark:text-slate-400 hover:text-orange-500 text-sm transition-colors duration-200" href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-6 md:px-8 mt-12 pt-8 border-t border-slate-200/50 dark:border-slate-800/50 flex flex-col md:flex-row justify-between gap-4">
+        <p class="text-slate-500 dark:text-slate-400 text-sm">
+            © 2026 Muzamil Safeer. All rights reserved.
+        </p>
+        <div class="flex gap-6">
+            <span class="text-slate-400 text-xs">Based in Dubai, UAE</span>
+        </div>
+    </div>
+</footer>
+
+<!-- Modals Component Container -->
+
+<!-- Video Testimonial Modal -->
+<div id="video-modal" class="modal-overlay fixed inset-0 z-[100] bg-black/80 flex items-center justify-center p-4 backdrop-blur-sm">
+    <div class="modal-content relative bg-slate-900 rounded-2xl w-full max-w-4xl aspect-video overflow-hidden shadow-2xl border border-white/10">
+        <button id="close-video-btn" class="absolute top-4 right-4 z-50 text-white/70 hover:text-white bg-black/40 hover:bg-black/60 p-2 rounded-full transition-colors flex items-center justify-center" aria-label="Close video">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+        <iframe id="modal-video-player" class="w-full h-full border-0" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+</div>
+
+<!-- Case Study Detail Modal -->
+<div id="case-study-modal" class="modal-overlay fixed inset-0 z-[100] bg-black/80 flex items-center justify-center p-4 backdrop-blur-sm">
+    <div class="modal-content relative bg-surface rounded-2xl w-full max-w-3xl max-h-[85vh] overflow-y-auto shadow-2xl border border-outline-variant/20 p-8 md:p-12 text-on-surface">
+        <button id="close-case-study-btn" class="absolute top-4 right-4 text-on-surface-variant hover:text-on-surface bg-surface-container hover:bg-surface-container-high p-2 rounded-full transition-colors flex items-center justify-center" aria-label="Close case study">
+            <span class="material-symbols-outlined">close</span>
+        </button>
+        
+        <div class="border-b border-outline-variant/20 pb-6 mb-8">
+            <span class="text-xs font-bold text-primary-container tracking-widest uppercase">Property Finder Competitor - Complete Breakdown</span>
+            <h3 class="text-3xl font-extrabold font-headline text-on-surface mt-2">Dubai Real Estate Domination</h3>
+        </div>
+        
+        <div class="space-y-8 text-on-surface-variant text-base md:text-lg leading-relaxed">
+            <div>
+                <h4 class="text-lg font-bold text-on-surface font-headline mb-3 flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary-container">analytics</span>
+                    The Baseline (Month 0)
+                </h4>
+                <p>The client's website had a domain rating (DR) of 45 but failed to capture traffic. Over 90% of local neighborhood queries (e.g. "Apartments for rent in Dubai Marina", "Villas for sale in Downtown Dubai") were monopolized by Property Finder and Bayut. Ad spend CPCs were exceeding $4.50 per click.</p>
+            </div>
+            
+            <div>
+                <h4 class="text-lg font-bold text-on-surface font-headline mb-3 flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary-container">build</span>
+                    Core Execution Phase
+                </h4>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li><strong>Indexation Pipeline:</strong> Fixed over 12,000 auto-generated duplicate search parameters and canonical tags that were exhausting the Googlebot crawl budget.</li>
+                    <li><strong>Content Cluster Architecting:</strong> Developed 45 neighborhood guide hubs filled with customized real estate trends data, neighborhood pricing calculators, and community maps.</li>
+                    <li><strong>Link Placements:</strong> Executed an aggressive PR campaign obtaining links from trusted regional outlets like Khaleej Times, Gulf News, and Arabian Business.</li>
+                </ul>
+            </div>
+            
+            <div class="bg-surface-container p-6 rounded-2xl">
+                <h4 class="text-lg font-bold text-on-surface font-headline mb-3">The Outcome (Month 6)</h4>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 text-center">
+                    <div>
+                        <p class="text-3xl font-black text-primary-container">+420%</p>
+                        <p class="text-[10px] uppercase font-bold text-slate-500 tracking-wider">Organic Traffic</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl font-black text-primary-container">Top 3</p>
+                        <p class="text-[10px] uppercase font-bold text-slate-500 tracking-wider">For 180+ Area Keywords</p>
+                    </div>
+                    <div class="col-span-2 sm:col-span-1">
+                        <p class="text-3xl font-black text-primary-container">$18k/mo</p>
+                        <p class="text-[10px] uppercase font-bold text-slate-500 tracking-wider">Saved Ad Spend</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Audit Submission Success Modal -->
+<div id="success-modal" class="modal-overlay fixed inset-0 z-[100] bg-black/80 flex items-center justify-center p-4 backdrop-blur-sm">
+    <div class="modal-content relative bg-white dark:bg-slate-900 rounded-3xl p-8 max-w-md w-full shadow-2xl text-center flex flex-col items-center border border-outline-variant/10">
+        <div class="checkmark-wrapper mb-6">
+            <div class="checkmark">
+                <svg class="checkmark-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                    <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                    <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                </svg>
+            </div>
+        </div>
+        <h3 class="text-2xl font-bold font-headline mb-3 text-on-surface">Audit Request Received!</h3>
+        <p class="text-on-surface-variant text-sm mb-6 leading-relaxed">
+            Muzamil Safeer's technical SEO team is auditing your URL. Your custom audit report and 90-day organic growth roadmap will land in your inbox within 24 hours.
+        </p>
+        <button id="close-success-btn" class="signature-glow text-on-primary px-8 py-3 rounded-lg font-bold w-full hover:scale-105 active:scale-95 transition-transform duration-200">
+            Excellent, Got It!
+        </button>
+    </div>
+</div>
+
+<!-- Back to Top Button -->
+<button id="back-to-top" class="back-to-top bg-primary-container text-on-primary p-3.5 rounded-full shadow-xl shadow-primary-container/20 hover:scale-110 active:scale-95 transition-all" aria-label="Back to top">
+    <span class="material-symbols-outlined text-[24px]">arrow_upward</span>
+</button>
+
+<script src="script.js" defer></script>
+</body>
+</html>
