@@ -402,6 +402,377 @@ body {
   }
 }
 
+/* Problems to outcomes premium section */
+.problem-outcome-section {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    linear-gradient(180deg, var(--color-surface) 0%, var(--color-surface-container-lowest) 52%, var(--color-surface) 100%);
+}
+
+.problem-outcome-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.22;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(249, 104, 2, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(249, 104, 2, 0.08) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, transparent, #000 18%, #000 78%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 18%, #000 78%, transparent);
+  transform: perspective(900px) rotateX(62deg) translateY(-8rem) scale(1.2);
+  transform-origin: center top;
+}
+
+.problem-outcome-section::after {
+  content: none;
+}
+
+.problem-outcome-intro {
+  position: relative;
+}
+
+.problem-outcome-intro::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -1.25rem;
+  width: 7rem;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-primary-container), transparent);
+  transform: translateX(-50%);
+}
+
+.problem-outcome-grid {
+  position: relative;
+  perspective: 1400px;
+}
+
+.problem-outcome-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 100%;
+  border-radius: 1.5rem;
+  box-shadow:
+    0 22px 55px -42px rgba(15, 23, 42, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.65);
+  transform: none;
+  transition:
+    transform 0.26s ease,
+    border-color 0.32s ease,
+    box-shadow 0.32s ease;
+}
+
+.problem-outcome-card-problem {
+  color: #ffffff;
+  border-color: rgba(248, 113, 113, 0.22) !important;
+  background:
+    linear-gradient(145deg, rgba(15, 23, 42, 0.98), rgba(2, 6, 23, 0.98)),
+    radial-gradient(circle at top left, rgba(185, 28, 28, 0.22), transparent 40%) !important;
+}
+
+.problem-outcome-card-outcome {
+  border-color: rgba(249, 104, 2, 0.32) !important;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.99), rgba(255, 247, 237, 0.96)),
+    radial-gradient(circle at top right, rgba(249, 104, 2, 0.12), transparent 42%) !important;
+}
+
+.dark .problem-outcome-card-problem {
+  background:
+    linear-gradient(145deg, rgba(15, 23, 42, 0.98), rgba(2, 6, 23, 0.98)),
+    radial-gradient(circle at top left, rgba(185, 28, 28, 0.22), transparent 40%) !important;
+}
+
+.dark .problem-outcome-card-outcome {
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.99), rgba(255, 247, 237, 0.96)),
+    radial-gradient(circle at top right, rgba(249, 104, 2, 0.12), transparent 42%) !important;
+}
+
+.problem-outcome-card-problem h3,
+.problem-outcome-card-problem li,
+.problem-outcome-card-problem li span:not(.material-symbols-outlined) {
+  color: rgba(255, 255, 255, 0.84) !important;
+}
+
+.problem-outcome-card-problem h3 {
+  color: #ffffff !important;
+}
+.problem-heading-accent {
+  display: inline;
+}
+
+.problem-heading-accent-problem {
+  color: #fca5a5;
+}
+
+.problem-heading-accent-outcome {
+  color: var(--color-primary-container);
+}
+
+.dark .problem-outcome-card-problem h3,
+.dark .problem-outcome-card-problem li,
+.dark .problem-outcome-card-problem li span:not(.material-symbols-outlined) {
+  color: rgba(255, 255, 255, 0.84) !important;
+}
+
+.dark .problem-outcome-card-problem h3 {
+  color: #ffffff !important;
+}
+
+.problem-outcome-card-outcome h3,
+.problem-outcome-card-outcome li,
+.problem-outcome-card-outcome li span:not(.material-symbols-outlined) {
+  color: var(--color-on-surface) !important;
+}
+
+.dark .problem-outcome-card {
+  box-shadow:
+    0 34px 74px -50px rgba(0, 0, 0, 0.9),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.problem-outcome-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  z-index: 0;
+  height: 3px;
+  opacity: 1;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.problem-outcome-card::after {
+  content: none;
+}
+
+.problem-outcome-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.problem-outcome-card-problem::before {
+  background: linear-gradient(90deg, #b91c1c, rgba(185, 28, 28, 0));
+}
+
+.problem-outcome-card-outcome::before {
+  background: linear-gradient(90deg, #f96802, rgba(249, 104, 2, 0));
+}
+
+.problem-outcome-card:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 28px 62px -46px rgba(15, 23, 42, 0.58),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.problem-outcome-card:hover::before {
+  opacity: 1;
+}
+
+.problem-outcome-card-problem:hover {
+  border-color: rgba(248, 113, 113, 0.34) !important;
+  box-shadow: 0 30px 70px -48px rgba(2, 6, 23, 0.82);
+}
+
+.problem-outcome-card-outcome:hover {
+  border-color: rgba(249, 104, 2, 0.48) !important;
+  box-shadow: 0 30px 70px -48px rgba(249, 104, 2, 0.34);
+}
+.problem-outcome-card-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0;
+}
+
+.problem-outcome-index {
+  color: rgba(15, 23, 42, 0.1);
+  font-family: var(--font-headline);
+  font-size: 2.25rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.dark .problem-outcome-index {
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.problem-outcome-card-problem .problem-outcome-index {
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.problem-outcome-card-outcome .problem-outcome-index {
+  color: rgba(249, 104, 2, 0.18);
+}
+
+
+.problem-outcome-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.55rem;
+  margin-bottom: 0;
+  padding: 0.36rem 0.68rem;
+  border-radius: 999px;
+  font-size: 0.64rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.problem-outcome-chip-problem {
+  color: #fecaca;
+  border: 1px solid rgba(248, 113, 113, 0.28);
+  background: rgba(127, 29, 29, 0.28);
+}
+
+.problem-outcome-chip-outcome {
+  color: #9a3412;
+  border: 1px solid rgba(249, 104, 2, 0.24);
+  background: rgba(249, 104, 2, 0.08);
+}
+
+.dark .problem-outcome-chip-outcome {
+  color: #ffdbcc;
+}
+
+.problem-outcome-icon {
+  position: relative;
+  flex: 0 0 auto;
+  box-shadow: 0 14px 28px -18px currentColor;
+  transition: transform 0.34s ease, box-shadow 0.34s ease;
+}
+
+.problem-outcome-icon-problem {
+  background: rgba(127, 29, 29, 0.34) !important;
+  color: #f87171 !important;
+  border: 1px solid rgba(248, 113, 113, 0.24);
+}
+
+.problem-outcome-icon-outcome {
+  background: rgba(249, 104, 2, 0.1) !important;
+  color: #f96802 !important;
+  border: 1px solid rgba(249, 104, 2, 0.2);
+}
+
+.problem-outcome-icon::after {
+  content: none;
+}
+
+.problem-outcome-card:hover .problem-outcome-icon {
+  transform: none;
+  box-shadow: 0 18px 34px -16px currentColor;
+}
+
+.problem-outcome-list li {
+  position: relative;
+  min-height: 1.65rem;
+  padding: 0.28rem 0.35rem;
+  border-radius: 0.55rem;
+  opacity: 0;
+  transform: translateY(8px);
+  font-size: 0.92rem;
+  line-height: 1.35;
+}
+
+.problem-outcome-list li::after {
+  content: "";
+  position: absolute;
+  left: 2rem;
+  right: 0;
+  bottom: -0.2rem;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(142, 113, 100, 0.2), transparent);
+}
+
+.problem-outcome-card-problem .problem-outcome-list li::after {
+  background: linear-gradient(90deg, rgba(248, 113, 113, 0.18), transparent);
+}
+
+.problem-outcome-card-outcome .problem-outcome-list li::after {
+  background: linear-gradient(90deg, rgba(249, 104, 2, 0.18), transparent);
+}
+
+.problem-outcome-list li .material-symbols-outlined {
+  transition: transform 0.28s ease, filter 0.28s ease, background-color 0.24s ease;
+}
+
+.problem-outcome-card-problem .problem-outcome-list li:hover {
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.problem-outcome-card-outcome .problem-outcome-list li:hover {
+  background: rgba(249, 104, 2, 0.045);
+}
+
+.problem-outcome-list li:hover .material-symbols-outlined {
+  transform: none;
+  filter: none;
+}
+
+.scroll-reveal.revealed .problem-outcome-list li {
+  animation: problem-outcome-item-in 0.62s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.scroll-reveal.revealed .problem-outcome-list li:nth-child(1) { animation-delay: 0.04s; }
+.scroll-reveal.revealed .problem-outcome-list li:nth-child(2) { animation-delay: 0.08s; }
+.scroll-reveal.revealed .problem-outcome-list li:nth-child(3) { animation-delay: 0.12s; }
+.scroll-reveal.revealed .problem-outcome-list li:nth-child(4) { animation-delay: 0.16s; }
+.scroll-reveal.revealed .problem-outcome-list li:nth-child(5) { animation-delay: 0.2s; }
+.scroll-reveal.revealed .problem-outcome-list li:nth-child(6) { animation-delay: 0.24s; }
+.scroll-reveal.revealed .problem-outcome-list li:nth-child(7) { animation-delay: 0.28s; }
+.scroll-reveal.revealed .problem-outcome-list li:nth-child(8) { animation-delay: 0.32s; }
+.scroll-reveal.revealed .problem-outcome-list li:nth-child(9) { animation-delay: 0.36s; }
+.scroll-reveal.revealed .problem-outcome-list li:nth-child(10) { animation-delay: 0.4s; }
+.scroll-reveal.revealed .problem-outcome-list li:nth-child(11) { animation-delay: 0.44s; }
+
+@media (min-width: 768px) {
+  .problem-outcome-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .problem-outcome-card-problem,
+  .problem-outcome-card-outcome {
+    border-radius: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .problem-outcome-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .problem-outcome-card {
+    border-radius: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .problem-outcome-card,
+  .problem-outcome-card::after,
+  .problem-outcome-icon,
+  .problem-outcome-icon::after,
+  .problem-outcome-list li {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .problem-outcome-list li {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 /* Custom Modal style framework */
 .modal-overlay {
   opacity: 0;
@@ -469,6 +840,13 @@ body {
 @keyframes fill {
   100% {
     box-shadow: inset 0px 0px 0px 30px #22c55e;
+  }
+}
+
+@keyframes problem-outcome-item-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -880,5 +1258,36 @@ body {
 
   .client-logo-track {
     animation-duration: 22s;
+  }
+}
+
+/* Desktop density tuning: matches the preferred slightly zoomed-out feel. */
+@media (min-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+
+  .site-logo {
+    height: 48px;
+  }
+
+  #hero {
+    min-height: 520px;
+  }
+
+  #hero .h-\[550px\] {
+    height: 500px;
+  }
+
+  .reel-showcase {
+    min-height: 325px;
+  }
+
+  .client-logo-card {
+    height: 78px;
+  }
+
+  .seo-network-viewport {
+    min-height: 350px;
   }
 }
