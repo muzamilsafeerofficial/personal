@@ -6333,32 +6333,7 @@ main > section:not(#clients):not(#results) h2 {
 }
 
 @keyframes success-card-in { from { opacity: 0; transform: translateY(1.4rem) scale(0.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
-/* Canva client story video */
-.canva-video-shell {
-  position: relative;
-  width: min(100%, 720px);
-  margin-inline: auto;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  border: 1px solid rgba(249, 104, 2, 0.24);
-  border-radius: 1.25rem;
-  background: #0f172a;
-  box-shadow: 0 26px 65px -34px rgba(15, 23, 42, 0.55),
-    0 14px 30px -24px rgba(249, 104, 2, 0.4);
-}
-
-.canva-video-embed {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-@media (max-width: 767px) {
-  .canva-video-shell {
-    margin-top: 1.5rem;
-    border-radius: 1rem;
-  }
+.reel-video-preview {
+  object-fit: cover;
 }
 

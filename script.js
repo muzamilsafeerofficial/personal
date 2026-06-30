@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+﻿document.addEventListener('DOMContentLoaded', () => {
   // ==========================================
   // 1. THEME MANAGER (Light/Dark Mode)
   // ==========================================
@@ -105,13 +105,29 @@ document.addEventListener('DOMContentLoaded', () => {
       const media = activeCard ? activeCard.querySelector('.reel-media') : null;
       if (!activeCard || !media || activeCard.classList.contains('is-playing')) return;
 
-      const iframe = document.createElement('iframe');
-      iframe.className = 'reel-inline-player';
-      iframe.src = getPlayableUrl(activeCard.dataset.videoSrc);
-      iframe.title = activeCard.getAttribute('aria-label') || 'Selected reel';
-      iframe.allow = 'autoplay; encrypted-media; picture-in-picture';
-      iframe.allowFullscreen = true;
-      media.appendChild(iframe);
+      const source = activeCard.dataset.videoSrc || '';
+      const title = activeCard.getAttribute('aria-label') || 'Selected reel';
+
+      if (/\.mp4(?:$|\?)/i.test(source)) {
+        const video = document.createElement('video');
+        video.className = 'reel-inline-player';
+        video.src = source;
+        video.title = title;
+        video.controls = true;
+        video.autoplay = true;
+        video.playsInline = true;
+        media.appendChild(video);
+        video.play().catch(() => {});
+      } else {
+        const iframe = document.createElement('iframe');
+        iframe.className = 'reel-inline-player';
+        iframe.src = getPlayableUrl(source);
+        iframe.title = title;
+        iframe.allow = 'autoplay; encrypted-media; picture-in-picture';
+        iframe.allowFullscreen = true;
+        media.appendChild(iframe);
+      }
+
       activeCard.classList.add('is-playing');
     };
 
@@ -953,3 +969,4 @@ document.addEventListener('DOMContentLoaded', () => {
   initStickyGrowthStory();
   initServiceOdyssey();
   initSeoNetwork();});
+
